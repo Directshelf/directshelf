@@ -7,6 +7,7 @@ import StatsBar from "@/components/sections/StatsBar";
 import ROICalculator from "@/components/sections/ROICalculator";
 import HowItWorks from "@/components/sections/HowItWorks";
 import ActionSection from "@/components/sections/ActionSection";
+import LocationsSection from "@/components/sections/LocationsSection";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
         <BarriersSection />
         <SolutionSection />
         <StatsBar />
+        <LocationsSection />
         <ROICalculator />
         <HowItWorks />
         <ActionSection />
