@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 const locations = {
   active: [
     "Bangalore",
-    "Hyderabad", 
+    "Hyderabad",
     "Ahmedabad",
     "Mumbai",
     "Guwahati"
@@ -41,7 +41,7 @@ const LocationsSection = () => {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
-        <SectionHeading 
+        <SectionHeading
           subtitle="Hyperlocal fulfillment network with strategically placed micro-warehouses across major Indian cities for instant delivery"
           withGradient={false}
           className="text-gray-900"
@@ -84,7 +84,7 @@ const LocationsSection = () => {
               <h3 className="text-xl font-semibold text-gray-900">Active Locations</h3>
             </div>
             <p className="text-gray-600 text-sm mb-4">
-              Cities with our full-scale micro-warehousing network. Each city features 8-10 strategically placed fulfillment centers in high-demand zones for instant delivery
+              Cities with our full-scale micro-warehousing network. Each city features strategically placed fulfillment centers in high-demand zones for instant delivery
             </p>
             <div className="grid grid-cols-2 gap-3">
               {locations.active.map((city, index) => (
