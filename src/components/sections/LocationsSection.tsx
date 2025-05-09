@@ -8,7 +8,8 @@ const locations = {
     "Hyderabad",
     "Ahmedabad",
     "Mumbai",
-    "Guwahati"
+    "Guwahati",
+    "Ranchi"
   ],
   upcoming: [
     "Chennai",
