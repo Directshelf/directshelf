@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 const locations = {
   active: [
     "Bangalore",
-    "Hyderabad",
+    "Hyderabad", 
     "Ahmedabad",
     "Mumbai",
     "Guwahati",
@@ -44,7 +44,11 @@ const LocationsSection = () => {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
+<<<<<<< HEAD
         <SectionHeading
+=======
+        <SectionHeading 
+>>>>>>> 103ecd4 (Update the website with all the solutions)
           subtitle="Ready-to-use infrastructure across major Indian cities - launch in new markets within 72 hours"
           withGradient={false}
           className="text-gray-900"
