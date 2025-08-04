@@ -55,10 +55,10 @@ const ROICalculator = () => {
             <Calculator className="w-6 h-6 text-blue-600" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Calculate Your Growth Potential
+            Calculate Your Multi-City Scaling Potential
           </h2>
           <p className="text-lg text-gray-600">
-            See your minimum expected impact with DirectShelf's quick commerce solution
+            See the revenue impact of scaling your D2C brand to multiple cities with DirectShelf
           </p>
         </motion.div>
 

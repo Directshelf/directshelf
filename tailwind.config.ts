@@ -74,7 +74,20 @@ export default {
           'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
-        }
+        },
+        'logo-pink': 'hsl(var(--logo-pink))',
+        'logo-purple': 'hsl(var(--logo-purple))',
+        'logo-magenta': 'hsl(var(--logo-magenta))',
+        'logo-violet': 'hsl(var(--logo-violet))',
+        
+        /* Brand color system */
+        'brand-pink': 'hsl(var(--brand-pink))',
+        'brand-purple': 'hsl(var(--brand-purple))',
+        'brand-magenta': 'hsl(var(--brand-magenta))',
+        'brand-violet': 'hsl(var(--brand-violet))',
+        'brand-deep-purple': 'hsl(var(--brand-deep-purple))',
+        'brand-light-purple': 'hsl(var(--brand-light-purple))',
+        'brand-success': 'hsl(var(--brand-success))'
       },
       spacing: {
         section: {
@@ -86,6 +99,7 @@ export default {
       backgroundImage: {
         'hero-gradient': 'linear-gradient(45deg, #1E3A8A, #3B82F6)',
         'card-gradient': 'linear-gradient(to bottom right, var(--tw-gradient-from), var(--tw-gradient-to))',
+        'logo-gradient': 'linear-gradient(135deg, hsl(var(--logo-pink)), hsl(var(--logo-purple)))',
       },
       borderRadius: {
         lg: 'var(--radius)',

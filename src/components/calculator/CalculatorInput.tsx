@@ -26,13 +26,13 @@ export const CalculatorInput = ({
           label: "Monthly Orders",
           placeholder: "e.g., 1000",
           name: "monthlyOrders",
-          tooltip: "Your current average monthly order volume across all channels"
+          tooltip: "Your current monthly order volume that you want to scale across multiple cities"
         },
         {
           label: "Average Order Value (₹)",
           placeholder: "e.g., 1500",
           name: "averageOrderValue",
-          tooltip: "Average value of each order in Rupees, including taxes and shipping"
+          tooltip: "Average order value that you expect to maintain across new cities"
         }
       ].map((field) => (
         <div key={field.name} className="relative">

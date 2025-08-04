@@ -5,20 +5,23 @@ import { GradientCard } from "@/components/ui/gradient-card";
 
 const stats = [
   {
-    number: "25%",
-    label: "Higher Conversion",
+    number: "3x",
+    label: "Faster City Expansion",
+    aiDetail: "Data-driven location strategy",
     Icon: ArrowUpRight,
     gradient: "from-blue-500/20 to-indigo-500/20"
   },
   {
-    number: "15%",
-    label: "Reduced CAC",
+    number: "60%",
+    label: "Lower Setup Costs",
+    aiDetail: "Intelligent resource planning",
     Icon: DollarSign,
     gradient: "from-blue-500/20 to-indigo-500/20"
   },
   {
-    number: "40%",
-    label: "Higher Retention",
+    number: "90%",
+    label: "Faster Go-to-Market",
+    aiDetail: "Smart demand forecasting",
     Icon: Users,
     gradient: "from-blue-500/20 to-indigo-500/20"
   }
@@ -31,11 +34,11 @@ const StatsBar = () => {
       
       <div className="container mx-auto px-4 relative">
         <SectionHeading 
-          subtitle="Empowering D2C brands with measurable growth"
+          subtitle="Proven results from D2C brands scaling with DirectShelf"
           withGradient={false}
           className="text-gray-900"
         >
-          Transforming Customer Journeys: From Conversions to Lifetime Loyalty
+          Scale Faster, Grow Stronger
         </SectionHeading>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
@@ -61,6 +64,12 @@ const StatsBar = () => {
                 </motion.div>
                 <div className="text-xl font-semibold text-gray-900 mb-3">
                   {stat.label}
+                </div>
+                
+                {/* AI Enhancement Badge */}
+                <div className="flex items-center gap-2 text-xs text-blue-600 font-medium">
+                  <div className="w-1 h-1 bg-blue-500 rounded-full animate-pulse" />
+                  {stat.aiDetail}
                 </div>
                 
                 {/* Decorative element */}

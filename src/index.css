@@ -12,7 +12,7 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222 47% 33%;
+    --primary: 329 81% 51%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,6 +26,15 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
+    
+    /* Brand color system aligned with logo */
+    --brand-pink: 329 81% 51%;        /* #e11d8f - Accent color */
+    --brand-purple: 258 90% 66%;      /* #8b5cf6 - Logo secondary */
+    --brand-magenta: 292 84% 61%;     /* #c026d3 - Logo accent */
+    --brand-violet: 258 85% 58%;      /* #7c3aed - Logo base */
+    --brand-deep-purple: 262 83% 35%; /* #5b21b6 - Darker variant */
+    --brand-light-purple: 258 100% 97%; /* Light purple for backgrounds */
+    --brand-success: 142 76% 36%;     /* #059669 - Complementary green */
   }
 
   .dark {
@@ -84,6 +93,22 @@
   
   .delay-1000 {
     animation-delay: 1000ms;
+  }
+  
+  /* Logo-inspired gradient utilities */
+  .bg-logo-gradient {
+    background: linear-gradient(135deg, hsl(var(--brand-deep-purple)), hsl(var(--brand-purple)));
+  }
+  
+  .text-logo-gradient {
+    background: linear-gradient(135deg, hsl(var(--brand-deep-purple)), hsl(var(--brand-purple)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .border-logo-gradient {
+    border-image: linear-gradient(135deg, hsl(var(--brand-deep-purple)), hsl(var(--brand-purple))) 1;
   }
 }
 

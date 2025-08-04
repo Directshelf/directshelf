@@ -5,20 +5,20 @@ import { GradientCard } from "@/components/ui/gradient-card";
 
 const barriers = [
   {
-    title: "Infrastructure Gaps",
-    description: "Lack of regional warehousing for rapid fulfillment",
+    title: "Infrastructure Investment",
+    description: "Setting up warehouses and fulfillment centers in each new city requires massive capital",
     Icon: Warehouse,
     gradient: "from-red-500/20 to-orange-500/20"
   },
   {
-    title: "High Costs",
-    description: "Logistics investments are prohibitive for emerging D2C brands",
+    title: "Operational Complexity",
+    description: "Managing inventory, fulfillment, and delivery across multiple cities becomes overwhelming",
     Icon: DollarSign,
     gradient: "from-orange-500/20 to-yellow-500/20"
   },
   {
-    title: "Marketplace Dependence",
-    description: "High commissions and loss of customer control",
+    title: "Brand Control Loss",
+    description: "Relying on third-party platforms means losing control over customer experience and data",
     Icon: Store,
     gradient: "from-yellow-500/20 to-red-500/20"
   }
@@ -32,11 +32,11 @@ const BarriersSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeading 
-          subtitle="Common challenges faced by D2C brands in rapid delivery"
+          subtitle="Common challenges D2C brands face when scaling to new cities"
           withGradient={false}
           className="text-gray-900"
         >
-          Barriers to Speed
+          Scaling Challenges
         </SectionHeading>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">

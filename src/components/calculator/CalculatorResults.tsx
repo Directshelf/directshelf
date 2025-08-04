@@ -20,19 +20,19 @@ interface CalculatorResultsProps {
 export const CalculatorResults = ({ results }: CalculatorResultsProps) => {
   const metrics = [
     {
-      label: "Additional Revenue",
+      label: "Multi-City Revenue Potential",
       value: results.additionalRevenue,
-      tooltip: "Based on 20% increase in conversions with DirectShelf's same-day delivery promise"
+      tooltip: "Projected revenue increase from scaling to multiple cities with DirectShelf's infrastructure"
     },
     {
-      label: "Cost Savings",
+      label: "Infrastructure Cost Savings",
       value: results.costSavings,
-      tooltip: "Calculated from 20% reduction in return rates through improved delivery experience"
+      tooltip: "Savings from using our existing infrastructure vs building your own in each city"
     },
     {
-      label: "Total Monthly Impact",
+      label: "Total Scaling Impact",
       value: results.totalImpact,
-      tooltip: "Combined impact of increased revenue and reduced operational costs with DirectShelf"
+      tooltip: "Combined financial impact of multi-city expansion with DirectShelf's platform"
     }
   ];
 
@@ -51,7 +51,7 @@ export const CalculatorResults = ({ results }: CalculatorResultsProps) => {
         className="space-y-6"
       >
         <h3 className="text-2xl font-bold text-gray-900 mb-8">
-          Minimum Monthly Impact
+          Multi-City Scaling Impact
         </h3>
         
         {metrics.map((metric, index) => (
@@ -87,7 +87,7 @@ export const CalculatorResults = ({ results }: CalculatorResultsProps) => {
           size="lg"
           onClick={scrollToContact}
         >
-          Get Your Detailed Growth Plan →
+          Get Your Multi-City Expansion Plan →
         </Button>
       </motion.div>
     </Card>

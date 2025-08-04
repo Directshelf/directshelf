@@ -12,11 +12,11 @@ const HeroHeadline = () => {
       >
         <div className="flex flex-wrap items-center gap-x-3">
           <span className="bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">
-            Your order—
+            Scale your brand 
           </span>
           <TypeAnimation
             sequence={[
-              'fulfilled',
+              'without',
             ]}
             speed={150}
             wrapper="span"
@@ -25,7 +25,7 @@ const HeroHeadline = () => {
             className="bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent"
           />
           <span className="bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">
-            before you even wait.
+            stress
           </span>
         </div>
       </motion.h1>

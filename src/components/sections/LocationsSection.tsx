@@ -9,7 +9,9 @@ const locations = {
     "Ahmedabad",
     "Mumbai",
     "Guwahati",
-    "Ranchi"
+    "Ranchi",
+    "Kolkata",
+    "Coimbatore"
   ],
   upcoming: [
     "Chennai",
@@ -23,18 +25,18 @@ const locations = {
 const benefits = [
   {
     icon: Clock,
-    title: "2-4 Hour Delivery",
-    description: "Ultra-fast delivery from the nearest micro-warehouse"
+    title: "Rapid Market Entry",
+    description: "Launch in new cities within 72 hours using our existing infrastructure"
   },
   {
     icon: Truck,
-    title: "Multi-City Fulfillment",
-    description: "Store inventory across multiple strategic locations"
+    title: "Zero Setup Investment",
+    description: "Use our warehouse network without any upfront infrastructure costs"
   },
   {
     icon: Building,
-    title: "Micro-Warehousing Network",
-    description: "8-10 micro-fulfillment centers per city in high-demand zones"
+    title: "Hyperlocal Presence",
+    description: "8-10 strategically located fulfillment centers per city for optimal coverage"
   }
 ];
 
@@ -43,11 +45,11 @@ const LocationsSection = () => {
     <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <SectionHeading
-          subtitle="Hyperlocal fulfillment network with strategically placed micro-warehouses across major Indian cities for instant delivery"
+          subtitle="Ready-to-use infrastructure across major Indian cities - launch in new markets within 72 hours"
           withGradient={false}
           className="text-gray-900"
         >
-          Our Coverage
+          Multi-City Infrastructure
         </SectionHeading>
 
         {/* Benefits Grid */}
@@ -85,7 +87,7 @@ const LocationsSection = () => {
               <h3 className="text-xl font-semibold text-gray-900">Active Locations</h3>
             </div>
             <p className="text-gray-600 text-sm mb-4">
-              Cities with our full-scale micro-warehousing network. Each city features strategically placed fulfillment centers in high-demand zones for instant delivery
+              Cities where our complete D2C enablement infrastructure is live. Launch your brand in these markets immediately with full warehousing and fulfillment support
             </p>
             <div className="grid grid-cols-2 gap-3">
               {locations.active.map((city, index) => (
@@ -118,7 +120,7 @@ const LocationsSection = () => {
               <h3 className="text-xl font-semibold text-gray-900">Coming Soon</h3>
             </div>
             <p className="text-gray-600 text-sm mb-4">
-              Cities where we're establishing our micro-warehousing network. Pre-register to secure priority access and exclusive launch offers for your area
+              Cities where we're building our D2C enablement infrastructure. Pre-register to be first to market when we launch in these locations
             </p>
             <div className="grid grid-cols-2 gap-3">
               {locations.upcoming.map((city, index) => (

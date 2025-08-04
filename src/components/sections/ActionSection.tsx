@@ -82,7 +82,7 @@ const ActionSection = () => {
   };
 
   return (
-    <section id="action-section" className="bg-gradient-to-r from-[#1E3A8A] to-[#3B82F6] py-24 px-4 md:px-6 lg:px-8">
+    <section id="action-section" className="bg-gradient-to-r from-brand-deep-purple to-brand-purple py-24 px-4 md:px-6 lg:px-8">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -93,16 +93,16 @@ const ActionSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Left Column - Text Content */}
             <div className="p-8 flex flex-col justify-center">
-              <h3 className="text-3xl font-bold text-[#1E3A8A] mb-8">
-                Get in Touch
+              <h3 className="text-3xl font-bold text-brand-deep-purple mb-8">
+                Ready to Scale Your D2C Brand?
               </h3>
               
               <ul className="space-y-5 mb-8">
                 {[
-                  "Custom growth roadmap",
-                  "ROI projection",
-                  "Integration timeline",
-                  "Live demo"
+                  "Custom multi-city expansion strategy",
+                  "Data-driven revenue impact analysis",
+                  "72-hour launch timeline",
+                  "Live optimization demonstration"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-4">
                     <Check className="w-6 h-6 text-[#10B981] flex-shrink-0" />
@@ -163,7 +163,7 @@ const ActionSection = () => {
                 <Button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full md:w-auto bg-[#2563EB] hover:bg-[#1E40AF] shadow-[0_4px_14px_0_rgb(0,118,255,0.39)] hover:shadow-[0_6px_20px_rgba(0,118,255,0.23)] hover:-translate-y-1 transition duration-200 ease-in-out text-lg py-6"
+                  className="w-full md:w-auto bg-brand-purple hover:bg-brand-deep-purple shadow-[0_4px_14px_0_rgba(139,92,246,0.39)] hover:shadow-[0_6px_20px_rgba(139,92,246,0.23)] hover:-translate-y-1 transition duration-200 ease-in-out text-lg py-6"
                 >
                   {isSubmitting ? "Sending..." : "Send Message →"}
                 </Button>
