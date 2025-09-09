@@ -14,13 +14,13 @@ import { cn } from "@/lib/utils";
 const DirectShelfLogo = ({ className, variant = "default" }: { className?: string; variant?: "default" | "large" | "xlarge" }) => {
   const sizeClasses = {
     default: "h-12 w-auto",
-    large: "h-16 w-auto", 
+    large: "h-16 w-auto",
     xlarge: "h-20 w-auto"
   };
 
   return (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 300 200"
       className={cn(sizeClasses[variant], className)}
     >
@@ -36,23 +36,23 @@ const DirectShelfLogo = ({ className, variant = "default" }: { className?: strin
         </linearGradient>
         <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-          <feMerge> 
+          <feMerge>
             <feMergeNode in="coloredBlur"/>
             <feMergeNode in="SourceGraphic"/>
           </feMerge>
         </filter>
       </defs>
-      
+
       <g transform="translate(75, 25)">
         {/* Pallet Jack Base */}
         <g transform="translate(40, 110)">
           {/* Handle in upward position */}
-          <path d="M25,0 L-15,-25" stroke="#5b21b6" 
+          <path d="M25,0 L-15,-25" stroke="#5b21b6"
                 strokeWidth="6" strokeLinecap="round" filter="url(#glow)"/>
           {/* Base Frame */}
-          <rect x="25" y="-5" width="120" height="12" 
+          <rect x="25" y="-5" width="120" height="12"
                 fill="url(#accentGradient)" rx="2"/>
-          
+
           {/* Left Wheel with Motion Trails */}
           <g transform="translate(45, 7)">
             {/* Extended motion trails */}
@@ -70,7 +70,7 @@ const DirectShelfLogo = ({ className, variant = "default" }: { className?: strin
             <circle cx="0" cy="0" r="7" fill="#5b21b6"/>
             <circle cx="0" cy="0" r="3" fill="white" opacity="0.6"/>
           </g>
-          
+
           {/* Right Wheel with Motion Trails */}
           <g transform="translate(125, 7)">
             {/* Extended motion trails */}
@@ -89,19 +89,19 @@ const DirectShelfLogo = ({ className, variant = "default" }: { className?: strin
             <circle cx="0" cy="0" r="3" fill="white" opacity="0.6"/>
           </g>
         </g>
-        
+
         {/* Floating Effect Shadow */}
-        <ellipse cx="100" cy="115" rx="55" ry="3" 
+        <ellipse cx="100" cy="115" rx="55" ry="3"
                  fill="#5b21b6" opacity="0.2"/>
-        
+
         {/* Main Box floating above */}
-        <rect x="65" y="25" width="120" height="70" 
+        <rect x="65" y="25" width="120" height="70"
               fill="url(#primaryGradient)" rx="4" filter="url(#glow)"/>
-        
+
         {/* Shelf Lines */}
-        <line x1="65" y1="50" x2="185" y2="50" 
+        <line x1="65" y1="50" x2="185" y2="50"
               stroke="white" strokeWidth="2" opacity="0.9"/>
-        <line x1="65" y1="75" x2="185" y2="75" 
+        <line x1="65" y1="75" x2="185" y2="75"
               stroke="white" strokeWidth="2" opacity="0.9"/>
       </g>
     </svg>
@@ -134,13 +134,8 @@ const Header = () => {
       href: "#solution"
     },
     {
-      title: "Dark Store Management", 
-      description: "Hyperlocal fulfillment centers managed by us, branded for you",
-      href: "#solution"
-    },
-    {
       title: "Complete Fulfillment",
-      description: "End-to-end order processing with 2-4 hour delivery capabilities", 
+      description: "End-to-end order processing with 2-4 hour delivery capabilities",
       href: "#solution"
     },
     {
@@ -175,45 +170,45 @@ const Header = () => {
   );
 
   return (
-    <header 
+    <header
       className={`
-        fixed top-0 left-0 right-0 h-20 z-50 
+        fixed top-0 left-0 right-0 h-20 z-50
         transition-all duration-500
-        ${isScrolled 
-          ? "bg-white/90 backdrop-blur-md shadow-sm" 
+        ${isScrolled
+          ? "bg-white/90 backdrop-blur-md shadow-sm"
           : "bg-gradient-to-b from-white/90 to-transparent backdrop-blur-[2px]"
         }
       `}
     >
       <div className="container mx-auto px-4 h-full flex items-center">
         {/* Option 1: Logo 2x larger than text (Default) */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-1"
         >
-          <DirectShelfLogo 
+          <DirectShelfLogo
             variant="default"
             className={`transition-all duration-300 ${
               isScrolled ? "h-8 opacity-100" : "h-10 opacity-90"
             }`}
           />
           <span className={`font-bold text-xl leading-tight transition-colors duration-300 ml-1 ${
-            isScrolled 
-              ? "bg-gradient-to-r from-brand-deep-purple to-brand-purple bg-clip-text text-transparent" 
+            isScrolled
+              ? "bg-gradient-to-r from-brand-deep-purple to-brand-purple bg-clip-text text-transparent"
               : "bg-gradient-to-r from-brand-deep-purple to-brand-purple bg-clip-text text-transparent"
           }`}>
             DirectShelf
           </span>
         </motion.div>
-        
+
         <nav className="hidden lg:flex items-center space-x-8 ml-20">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className={`text-sm font-medium transition-colors duration-300 ${
-                  isScrolled 
-                    ? "text-gray-700 hover:text-primary" 
+                  isScrolled
+                    ? "text-gray-700 hover:text-primary"
                     : "text-gray-800/90 hover:text-primary/90"
                 }`}>
                   Solutions
@@ -246,37 +241,37 @@ const Header = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          
+
           {navItems.map((item) => (
-            <motion.button 
+            <motion.button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               className={`text-sm font-medium transition-colors duration-300 ${
-                isScrolled 
-                  ? "text-gray-700 hover:text-primary" 
+                isScrolled
+                  ? "text-gray-700 hover:text-primary"
                   : "text-gray-800/90 hover:text-primary/90"
               }`}
             >
               {item.label}
             </motion.button>
           ))}
-          
-          <motion.button 
+
+          <motion.button
             onClick={() => window.open('https://medium.com/@directshelf', '_blank')}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className={`text-sm font-medium transition-colors duration-300 ${
-              isScrolled 
-                ? "text-gray-700 hover:text-primary" 
+              isScrolled
+                ? "text-gray-700 hover:text-primary"
                 : "text-gray-800/90 hover:text-primary/90"
             }`}
           >
             Insights
           </motion.button>
         </nav>
-        
+
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
