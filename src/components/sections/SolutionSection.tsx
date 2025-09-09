@@ -11,7 +11,7 @@ const features = [
   },
   {
     title: "Complete Fulfillment",
-    description: "End-to-end order processing with intelligent assignment for guaranteed 2-4 hour delivery",
+    description: "End-to-end order processing with intelligent assignment for guaranteed 24 hour delivery",
     Icon: Network,
     aiFeature: "Smart routing ensures 99.5% on-time delivery rate"
   },
