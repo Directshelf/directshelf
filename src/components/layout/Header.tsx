@@ -134,6 +134,11 @@ const Header = () => {
       href: "#solution"
     },
     {
+      title: "Dark Store Management",
+      description: "Hyperlocal fulfillment centers managed by us, branded for you",
+      href: "#solution"
+    },
+    {
       title: "Complete Fulfillment",
       description: "End-to-end order processing with 2-4 hour delivery capabilities",
       href: "#solution"
