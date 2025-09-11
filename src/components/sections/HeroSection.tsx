@@ -59,7 +59,7 @@ const HeroSection = () => {
             <BenefitCard
               title="For Your Customers"
               benefits={[
-                "Fast 2-4 hour deliveries that delight and convert",
+                "Fast 24 hour deliveries that delight and convert",
                 "Consistent brand experience across all cities"
               ]}
               delay={0}
