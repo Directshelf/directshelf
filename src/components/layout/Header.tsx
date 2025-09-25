@@ -133,14 +133,14 @@ const Header = () => {
       description: "Strategic warehouse network across major cities with zero upfront investment",
       href: "#solution"
     },
-    {
-      title: "Dark Store Management",
-      description: "Hyperlocal fulfillment centers managed by us, branded for you",
-      href: "#solution"
-    },
+    // {
+    //   title: "Dark Store Management",
+    //   description: "Hyperlocal fulfillment centers managed by us, branded for you",
+    //   href: "#solution"
+    // },
     {
       title: "Complete Fulfillment",
-      description: "End-to-end order processing with 2-4 hour delivery capabilities",
+      description: "End-to-end order processing with in 24 hour delivery capabilities",
       href: "#solution"
     },
     {
