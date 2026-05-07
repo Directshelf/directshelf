@@ -148,12 +148,19 @@ const Header = () => {
       description: "Complete retail store setup and management solution for D2C brands",
       href: "https://zippstor.com/",
       external: true
+    },
+    {
+      title: "Office Setup & Workspace Infrastructure",
+      description: "End-to-end office setup solutions for startups, enterprises, and GCCs",
+      href: "/office-setup"
     }
   ];
 
   const handleNavClick = (href: string) => {
     if (href.startsWith('http')) {
       window.open(href, '_blank');
+    } else if (href.startsWith('/')) {
+      window.location.href = href;
     } else {
       const element = document.querySelector(href);
       if (element) {
