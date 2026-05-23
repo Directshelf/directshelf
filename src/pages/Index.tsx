@@ -8,6 +8,7 @@ import ROICalculator from "@/components/sections/ROICalculator";
 import HowItWorks from "@/components/sections/HowItWorks";
 import ActionSection from "@/components/sections/ActionSection";
 import LocationsSection from "@/components/sections/LocationsSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <SolutionSection />
         <StatsBar />
         <LocationsSection />
+        <TestimonialsSection />
         <ROICalculator />
         <HowItWorks />
         <ActionSection />
