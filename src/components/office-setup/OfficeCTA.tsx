@@ -24,7 +24,7 @@ const OfficeCTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-            <motion.a
+            {/* <motion.a
               href="https://www.directshelf.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -36,10 +36,10 @@ const OfficeCTA = () => {
             >
               <Globe className="w-5 h-5" />
               www.directshelf.com
-            </motion.a>
+            </motion.a> */}
 
             <motion.a
-              href="mailto:sales@directshelf.com"
+              href="mailto:sales@directshelf.in"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-3 px-6 py-4 bg-teal-500 hover:bg-teal-400
@@ -47,7 +47,7 @@ const OfficeCTA = () => {
                        transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/25 w-full sm:w-auto justify-center"
             >
               <Mail className="w-5 h-5" />
-              sales@directshelf.com
+              sales@directshelf.in
             </motion.a>
           </div>
 
