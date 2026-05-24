@@ -7,6 +7,7 @@ import StatsBar from "@/components/sections/StatsBar";
 import ROICalculator from "@/components/sections/ROICalculator";
 import HowItWorks from "@/components/sections/HowItWorks";
 import ActionSection from "@/components/sections/ActionSection";
+import ClientsSection from "@/components/sections/ClientsSection";
 import LocationsSection from "@/components/sections/LocationsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 
@@ -19,6 +20,7 @@ const Index = () => {
         <BarriersSection />
         <SolutionSection />
         <StatsBar />
+        <ClientsSection />
         <LocationsSection />
         <TestimonialsSection />
         <ROICalculator />

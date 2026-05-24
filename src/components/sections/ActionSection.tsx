@@ -10,6 +10,7 @@ const ActionSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
+    email: "",
     company: "",
     mobile: "",
     message: ""
@@ -24,26 +25,87 @@ const ActionSection = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.company || !formData.mobile) {
+  const validateForm = () => {
+    // Check if all required fields are filled
+    if (!formData.name.trim()) {
       toast({
-        title: "Please fill in all required fields",
+        title: "Name is required",
+        description: "Please enter your name",
         variant: "destructive"
       });
+      return false;
+    }
+
+    if (!formData.email.trim()) {
+      toast({
+        title: "Email is required",
+        description: "Please enter your email address",
+        variant: "destructive"
+      });
+      return false;
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid email format",
+        description: "Please enter a valid email address",
+        variant: "destructive"
+      });
+      return false;
+    }
+
+    if (!formData.company.trim()) {
+      toast({
+        title: "Company name is required",
+        description: "Please enter your company name",
+        variant: "destructive"
+      });
+      return false;
+    }
+
+    if (!formData.mobile.trim()) {
+      toast({
+        title: "Mobile number is required",
+        description: "Please enter your mobile number",
+        variant: "destructive"
+      });
+      return false;
+    }
+
+    // Validate mobile number format (10-15 digits)
+    const mobileRegex = /^[0-9]{10,15}$/;
+    if (!mobileRegex.test(formData.mobile.replace(/\s+|-/g, ''))) {
+      toast({
+        title: "Invalid mobile number",
+        description: "Please enter a valid mobile number (10-15 digits)",
+        variant: "destructive"
+      });
+      return false;
+    }
+
+    return true;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Validate form
+    if (!validateForm()) {
       return;
     }
 
     setIsSubmitting(true);
 
-    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScpwMjertq0Ewi1Oa5QXJrLPZLI-KU4n9-o2_TfXNswXmmfSQ/formResponse";
-    
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSf9afhu1l1Z91Nil-3TEDQFDQhG63Rh_vUIv1H-rsrD1WpEpw/formResponse";
+
     const formBody = new URLSearchParams({
-      "entry.411793930": formData.name,
-      "entry.332356986": formData.company,
-      "entry.427871165": formData.mobile,
-      "entry.1574753000": formData.message || ""
+      "entry.1083461693": formData.name,
+      "entry.1920260266": formData.company,
+      "entry.1346518617": formData.email,
+      "entry.1515156476": formData.mobile,
+      "entry.109417011": formData.message || ""
     });
 
     try {
@@ -60,6 +122,7 @@ const ActionSection = () => {
       // Clear form and show success message
       setFormData({
         name: "",
+        email: "",
         company: "",
         mobile: "",
         message: ""
@@ -96,7 +159,7 @@ const ActionSection = () => {
               <h3 className="text-3xl font-bold text-brand-deep-purple mb-8">
                 Ready to Scale Your D2C Brand?
               </h3>
-              
+
               <ul className="space-y-5 mb-8">
                 {[
                   "Custom multi-city expansion strategy",
@@ -116,6 +179,9 @@ const ActionSection = () => {
             <div className="bg-[#F8FAFC] p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Name <span className="text-red-500">*</span>
+                  </label>
                   <Input
                     name="name"
                     value={formData.name}
@@ -126,6 +192,23 @@ const ActionSection = () => {
                   />
                 </div>
                 <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Email <span className="text-red-500">*</span>
+                  </label>
+                  <Input
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                    className="w-full"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Company <span className="text-red-500">*</span>
+                  </label>
                   <Input
                     name="company"
                     value={formData.company}
@@ -136,6 +219,9 @@ const ActionSection = () => {
                   />
                 </div>
                 <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Mobile <span className="text-red-500">*</span>
+                  </label>
                   <Input
                     name="mobile"
                     value={formData.mobile}
@@ -147,6 +233,9 @@ const ActionSection = () => {
                   />
                 </div>
                 <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Message
+                  </label>
                   <Textarea
                     name="message"
                     value={formData.message}
@@ -160,7 +249,7 @@ const ActionSection = () => {
                   </p>
                 </div>
 
-                <Button 
+                <Button
                   type="submit"
                   disabled={isSubmitting}
                   className="w-full md:w-auto bg-brand-purple hover:bg-brand-deep-purple shadow-[0_4px_14px_0_rgba(139,92,246,0.39)] hover:shadow-[0_6px_20px_rgba(139,92,246,0.23)] hover:-translate-y-1 transition duration-200 ease-in-out text-lg py-6"

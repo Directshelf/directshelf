@@ -15,8 +15,8 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-radial from-transparent to-brand-deep-purple animate-pulse delay-100"></div>
       </div>
 
-      <div className="container mx-auto px-4 h-full flex flex-col md:flex-row items-center relative z-10 py-8 md:py-12 lg:py-18">
-        <motion.div 
+      <div className="container mx-auto px-4 h-full flex flex-col md:flex-row items-start md:items-end relative z-10 py-8 md:py-12 lg:py-18 gap-6">
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
