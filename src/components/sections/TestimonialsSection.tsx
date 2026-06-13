@@ -71,8 +71,8 @@ const testimonials: Testimonial[] = [
     logoPath: "/logos/testimonials/Asa Beauty.jpeg"
   },
   {
-    id: "bru-bliss",
-    company: "Bru & Bliss",
+    id: "brew-bliss",
+    company: "Brew & Bliss",
     industry: "Beverages & Coffee",
     quote: "DirectShelf has played a major role in improving our supply chain efficiency and customer satisfaction. Their warehouse solutions have streamlined our inventory handling, while their fast and dependable last-mile delivery network ensures our coffee products reach customers fresh and on time. Since partnering with them, we've experienced enhanced customer experience, faster order fulfillment, and noticeable savings in logistics and operational costs. DirectShelf truly understands the needs of modern consumer brands.",
     highlight: "Fresh & on-time delivery",
@@ -160,7 +160,7 @@ const TestimonialsSection = () => {
                     {/* Header with brand logo and company name */}
                     <div className="flex items-center gap-4 mb-5">
                       <div
-                        className={`w-12 h-12 rounded-xl shadow-lg flex items-center justify-center flex-shrink-0 ${testimonial.id === "bru-bliss" ? "bg-black" : ""
+                        className={`w-12 h-12 rounded-xl shadow-lg flex items-center justify-center flex-shrink-0 ${testimonial.id === "brew-bliss" ? "bg-black" : ""
                           }`}
                       >
                         <img

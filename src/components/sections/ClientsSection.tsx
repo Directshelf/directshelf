@@ -5,7 +5,7 @@ const clients = [
     { id: 1, name: "Asa Beauty", logo: "/logos/clients/Asa Beauty.jpeg" },
     { id: 2, name: "Bare Anatomy", logo: "/logos/clients/Bare Anatomy.jpg" },
     { id: 3, name: "Betrukind", logo: "/logos/clients/Betrukind.webp" },
-    { id: 4, name: "Bru & Bliss", logo: "/logos/clients/Bru&Bliss.jpg" },
+    { id: 4, name: "Brew & Bliss", logo: "/logos/clients/Bru&Bliss.jpg" },
     { id: 5, name: "Chemist at play", logo: "/logos/clients/Chemist at play.jpg" },
     { id: 6, name: "Ecoright", logo: "/logos/clients/ecoright_logo.jpeg" },
     { id: 7, name: "HappyWrap", logo: "/logos/clients/Happywrap.jpeg" },

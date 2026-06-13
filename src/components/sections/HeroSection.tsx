@@ -29,14 +29,14 @@ const HeroSection = () => {
             transition={{ delay: 0.2 }}
             className="text-white/80 text-sm md:text-base lg:text-lg font-medium tracking-wide"
           >
-            Complete D2C enablement platform
+            Elevating Infrastructure for Omni-Channel Brands
           </motion.p>
 
           <HeroHeadline />
 
           <div className="space-y-4 text-white/90 max-w-2xl">
             <p className="text-base md:text-lg lg:text-xl font-light">
-              From warehousing to fulfillment - we handle the infrastructure so you can focus on growing your brand
+              One connected platform enabling seamless growth across online, offline, and every commerce channel in between.
             </p>
           </div>
 
