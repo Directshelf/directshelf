@@ -12,7 +12,7 @@ const HeroHeadline = () => {
       >
         <div className="flex flex-wrap items-center gap-x-3">
           <span className="bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">
-            Scale your brand 
+            Scale your brand
           </span>
           <TypeAnimation
             sequence={[
@@ -22,7 +22,7 @@ const HeroHeadline = () => {
             wrapper="span"
             cursor={true}
             repeat={0}
-            className="bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent"
+            className="bg-gradient-to-r from-cyan-300 to-teal-300 bg-clip-text text-transparent"
           />
           <span className="bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">
             stress

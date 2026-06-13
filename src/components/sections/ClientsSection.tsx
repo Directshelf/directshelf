@@ -48,13 +48,13 @@ const ClientsSection = () => {
                         {carouselClients.map((client, index) => (
                             <div
                                 key={`${client.id}-${Math.floor(index / clients.length)}`}
-                                className="flex-shrink-0 w-40 h-40 md:w-52 md:h-52 flex items-center justify-center bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-colors duration-300 shadow-md hover:shadow-xl cursor-pointer"
+                                className="flex-shrink-0 w-40 h-40 md:w-52 md:h-52 flex items-center justify-center bg-gray-50 rounded-xl p-2 hover:bg-gray-100 transition-colors duration-300 shadow-md hover:shadow-xl cursor-pointer"
                             >
                                 <img
                                     src={client.logo}
                                     alt={client.name}
                                     title={client.name}
-                                    className="max-w-[90%] max-h-[90%] object-contain"
+                                    className="max-w-full max-h-full object-contain"
                                 />
                             </div>
                         ))}

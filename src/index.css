@@ -12,7 +12,7 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 329 81% 51%;
+    --primary: 188 96% 33%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,15 +26,22 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
-    
-    /* Brand color system aligned with logo */
-    --brand-pink: 329 81% 51%;        /* #e11d8f - Accent color */
-    --brand-purple: 258 90% 66%;      /* #8b5cf6 - Logo secondary */
-    --brand-magenta: 292 84% 61%;     /* #c026d3 - Logo accent */
-    --brand-violet: 258 85% 58%;      /* #7c3aed - Logo base */
-    --brand-deep-purple: 262 83% 35%; /* #5b21b6 - Darker variant */
-    --brand-light-purple: 258 100% 97%; /* Light purple for backgrounds */
-    --brand-success: 142 76% 36%;     /* #059669 - Complementary green */
+
+    /* Brand color system aligned with new logo */
+    --brand-pink: 188 96% 33%;
+    /* #0891B2 - Primary Teal */
+    --brand-purple: 210 95% 18%;
+    /* #0F2940 - Dark Navy */
+    --brand-magenta: 188 96% 33%;
+    /* #0891B2 - Teal (same as primary) */
+    --brand-violet: 210 95% 18%;
+    /* #0F2940 - Navy (same as secondary) */
+    --brand-deep-purple: 210 95% 18%;
+    /* #0F2940 - Dark Navy */
+    --brand-light-purple: 188 100% 90%;
+    /* Light teal for backgrounds */
+    --brand-success: 142 76% 36%;
+    /* #059669 - Complementary green */
   }
 
   .dark {
@@ -64,11 +71,18 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Poppins', sans-serif;
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Poppins', sans-serif;
   }
 }
@@ -78,35 +92,35 @@
     opacity: 0;
     animation: fadeIn 0.5s ease-out forwards;
   }
-  
+
   .delay-100 {
     animation-delay: 100ms;
   }
-  
+
   .delay-200 {
     animation-delay: 200ms;
   }
-  
+
   .delay-300 {
     animation-delay: 300ms;
   }
-  
+
   .delay-1000 {
     animation-delay: 1000ms;
   }
-  
+
   /* Logo-inspired gradient utilities */
   .bg-logo-gradient {
     background: linear-gradient(135deg, hsl(var(--brand-deep-purple)), hsl(var(--brand-purple)));
   }
-  
+
   .text-logo-gradient {
     background: linear-gradient(135deg, hsl(var(--brand-deep-purple)), hsl(var(--brand-purple)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .border-logo-gradient {
     border-image: linear-gradient(135deg, hsl(var(--brand-deep-purple)), hsl(var(--brand-purple))) 1;
   }
@@ -117,6 +131,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

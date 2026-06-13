@@ -131,7 +131,7 @@ const TestimonialsSection = () => {
         <SectionHeading
           subtitle="Trusted by leading D2C brands across India"
         >
-          What Our Partners Say
+          Client Testimonials
         </SectionHeading>
 
         <div className="overflow-hidden" ref={scrollContainerRef}>

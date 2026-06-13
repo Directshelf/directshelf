@@ -26,13 +26,13 @@ const DirectShelfLogo = ({ className, variant = "default" }: { className?: strin
     >
       <defs>
         <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "#5b21b6" }} />
-          <stop offset="50%" style={{ stopColor: "#8b5cf6" }} />
-          <stop offset="100%" style={{ stopColor: "#c026d3" }} />
+          <stop offset="0%" style={{ stopColor: "#0F2940" }} />
+          <stop offset="50%" style={{ stopColor: "#0891B2" }} />
+          <stop offset="100%" style={{ stopColor: "#D4C4B0" }} />
         </linearGradient>
         <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#7c3aed" }} />
-          <stop offset="100%" style={{ stopColor: "#5b21b6" }} />
+          <stop offset="0%" style={{ stopColor: "#0891B2" }} />
+          <stop offset="100%" style={{ stopColor: "#0F2940" }} />
         </linearGradient>
         <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation="2" result="coloredBlur" />
@@ -47,7 +47,7 @@ const DirectShelfLogo = ({ className, variant = "default" }: { className?: strin
         {/* Pallet Jack Base */}
         <g transform="translate(40, 110)">
           {/* Handle in upward position */}
-          <path d="M25,0 L-15,-25" stroke="#5b21b6"
+          <path d="M25,0 L-15,-25" stroke="#0F2940"
             strokeWidth="6" strokeLinecap="round" filter="url(#glow)" />
           {/* Base Frame */}
           <rect x="25" y="-5" width="120" height="12"
@@ -57,17 +57,17 @@ const DirectShelfLogo = ({ className, variant = "default" }: { className?: strin
           <g transform="translate(45, 7)">
             {/* Extended motion trails */}
             <g opacity="0.2">
-              <path d="M-45,-3 L-7,-3" stroke="#8b5cf6" strokeWidth="1.5" />
-              <path d="M-42,0 L-7,0" stroke="#8b5cf6" strokeWidth="1.5" />
-              <path d="M-45,3 L-7,3" stroke="#8b5cf6" strokeWidth="1.5" />
+              <path d="M-45,-3 L-7,-3" stroke="#0891B2" strokeWidth="1.5" />
+              <path d="M-42,0 L-7,0" stroke="#0891B2" strokeWidth="1.5" />
+              <path d="M-45,3 L-7,3" stroke="#0891B2" strokeWidth="1.5" />
             </g>
             <g opacity="0.3">
-              <path d="M-35,-3 L-7,-3" stroke="#8b5cf6" strokeWidth="1.5" />
-              <path d="M-32,0 L-7,0" stroke="#8b5cf6" strokeWidth="1.5" />
-              <path d="M-35,3 L-7,3" stroke="#8b5cf6" strokeWidth="1.5" />
+              <path d="M-35,-3 L-7,-3" stroke="#0891B2" strokeWidth="1.5" />
+              <path d="M-32,0 L-7,0" stroke="#0891B2" strokeWidth="1.5" />
+              <path d="M-35,3 L-7,3" stroke="#0891B2" strokeWidth="1.5" />
             </g>
             {/* Main wheel */}
-            <circle cx="0" cy="0" r="7" fill="#5b21b6" />
+            <circle cx="0" cy="0" r="7" fill="#0F2940" />
             <circle cx="0" cy="0" r="3" fill="white" opacity="0.6" />
           </g>
 
@@ -75,24 +75,24 @@ const DirectShelfLogo = ({ className, variant = "default" }: { className?: strin
           <g transform="translate(125, 7)">
             {/* Extended motion trails */}
             <g opacity="0.2">
-              <path d="M-45,-3 L-7,-3" stroke="#8b5cf6" strokeWidth="1.5" />
-              <path d="M-42,0 L-7,0" stroke="#8b5cf6" strokeWidth="1.5" />
-              <path d="M-45,3 L-7,3" stroke="#8b5cf6" strokeWidth="1.5" />
+              <path d="M-45,-3 L-7,-3" stroke="#0891B2" strokeWidth="1.5" />
+              <path d="M-42,0 L-7,0" stroke="#0891B2" strokeWidth="1.5" />
+              <path d="M-45,3 L-7,3" stroke="#0891B2" strokeWidth="1.5" />
             </g>
             <g opacity="0.3">
-              <path d="M-35,-3 L-7,-3" stroke="#8b5cf6" strokeWidth="1.5" />
-              <path d="M-32,0 L-7,0" stroke="#8b5cf6" strokeWidth="1.5" />
-              <path d="M-35,3 L-7,3" stroke="#8b5cf6" strokeWidth="1.5" />
+              <path d="M-35,-3 L-7,-3" stroke="#0891B2" strokeWidth="1.5" />
+              <path d="M-32,0 L-7,0" stroke="#0891B2" strokeWidth="1.5" />
+              <path d="M-35,3 L-7,3" stroke="#0891B2" strokeWidth="1.5" />
             </g>
             {/* Main wheel */}
-            <circle cx="0" cy="0" r="7" fill="#5b21b6" />
+            <circle cx="0" cy="0" r="7" fill="#0F2940" />
             <circle cx="0" cy="0" r="3" fill="white" opacity="0.6" />
           </g>
         </g>
 
         {/* Floating Effect Shadow */}
         <ellipse cx="100" cy="115" rx="55" ry="3"
-          fill="#5b21b6" opacity="0.2" />
+          fill="#0F2940" opacity="0.2" />
 
         {/* Main Box floating above */}
         <rect x="65" y="25" width="120" height="70"
@@ -197,19 +197,20 @@ const Header = () => {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex items-center gap-1"
+          className="flex items-center"
         >
-          <DirectShelfLogo
-            variant="default"
-            className={`transition-all duration-300 ${isScrolled ? "h-8 opacity-100" : "h-10 opacity-90"
-              }`}
+          <img
+            src="/logos/Header/DS Square Logo.png?v=3"
+            alt="DirectShelf Logo"
+            className={`transition-all duration-300 ${isScrolled ? "h-16" : "h-20"
+              } w-auto`}
           />
-          <span className={`font-bold text-xl leading-tight transition-colors duration-300 ml-1 ${isScrolled
-              ? "bg-gradient-to-r from-brand-deep-purple to-brand-purple bg-clip-text text-transparent"
-              : "bg-gradient-to-r from-brand-deep-purple to-brand-purple bg-clip-text text-transparent"
+          {/* <span className={`font-bold text-xl leading-tight transition-colors duration-300 ${isScrolled
+            ? "bg-gradient-to-r from-brand-deep-purple to-brand-purple bg-clip-text text-transparent"
+            : "bg-gradient-to-r from-brand-deep-purple to-brand-purple bg-clip-text text-transparent"
             }`}>
             DirectShelf
-          </span>
+          </span> */}
         </motion.div>
 
         <nav className="hidden lg:flex items-center space-x-8 ml-20">
@@ -217,8 +218,8 @@ const Header = () => {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className={`text-sm font-medium transition-colors duration-300 ${isScrolled
-                    ? "text-gray-700 hover:text-primary"
-                    : "text-gray-800/90 hover:text-primary/90"
+                  ? "text-gray-700 hover:text-primary"
+                  : "text-gray-800/90 hover:text-primary/90"
                   }`}>
                   Solutions
                 </NavigationMenuTrigger>
@@ -258,8 +259,8 @@ const Header = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               className={`text-sm font-medium transition-colors duration-300 ${isScrolled
-                  ? "text-gray-700 hover:text-primary"
-                  : "text-gray-800/90 hover:text-primary/90"
+                ? "text-gray-700 hover:text-primary"
+                : "text-gray-800/90 hover:text-primary/90"
                 }`}
             >
               {item.label}
@@ -271,8 +272,8 @@ const Header = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className={`text-sm font-medium transition-colors duration-300 ${isScrolled
-                ? "text-gray-700 hover:text-primary"
-                : "text-gray-800/90 hover:text-primary/90"
+              ? "text-gray-700 hover:text-primary"
+              : "text-gray-800/90 hover:text-primary/90"
               }`}
           >
             Insights
