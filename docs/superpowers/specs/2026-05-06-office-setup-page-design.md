@@ -131,7 +131,7 @@ A new dedicated page within the DirectShelf website for enterprise office setup 
 **Contact Links:**
 - Website: www.directshelf.com (opens new tab)
 - Email: sales@directshelf.com (`mailto:` link)
-- Phone: 08047939544 (`tel:` link)
+- Phone: +91 99027 53404 (`tel:` link)
 
 **Style:** Buttons/links with hover glow effect
 

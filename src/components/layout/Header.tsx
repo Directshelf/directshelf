@@ -171,13 +171,13 @@ const Header = () => {
 
   const PhoneNumber = () => (
     <motion.a
-      href="tel:08047939544"
+      href="tel:+91 99027 53404"
       className="inline-flex items-center gap-2 text-primary hover:text-primary/90 transition-colors md:text-base text-sm"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
       <Phone className="h-5 w-5" />
-      <span className="font-medium">08047939544</span>
+      <span className="font-medium">+91 99027 53404</span>
     </motion.a>
   );
 

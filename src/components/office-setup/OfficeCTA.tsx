@@ -52,13 +52,13 @@ const OfficeCTA = () => {
           </div>
 
           <motion.a
-            href="tel:08047939544"
+            href="tel:+91 99027 53404"
             whileHover={{ scale: 1.02 }}
             className="inline-flex items-center gap-2 mt-6 text-white/80 hover:text-white
                      transition-colors duration-300"
           >
             <Phone className="w-5 h-5" />
-            <span className="text-lg font-medium">08047939544</span>
+            <span className="text-lg font-medium">+91 99027 53404</span>
           </motion.a>
         </motion.div>
       </div>
